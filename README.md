@@ -28,5 +28,5 @@ Create a .env file with the following contents:
 
 Note: MONGO_URL can be obtained in the database dashboard, where you can find the connect button, choose first option, and then a connection string will be shown.
 
-> npm i
+> npm i <br />
 > npm run dev
