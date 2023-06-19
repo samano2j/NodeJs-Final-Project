@@ -6,7 +6,8 @@ const bodyParser = require("body-parser");
 const app = express()
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static(path.join(__dirname, "client", "dist")))
+// app.use(express.static(path.join(__dirname, "client", "dist")))
+app.use(express.static(path.join(__dirname, "../client/dist")));
 
 const cookieParser = require("cookie-parser");
 const sessions = require('express-session');
