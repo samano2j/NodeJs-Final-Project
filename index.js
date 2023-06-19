@@ -30,6 +30,6 @@ app.get('/api/health', (req, res) => res.json({ msg: "Healthy!" }))
 
 app.use('/api', require('./routes/music.routes'))
 
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
 });

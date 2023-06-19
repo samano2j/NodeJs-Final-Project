@@ -1,22 +1,8 @@
 {
     "version": 2,
-    "name": "music-app",
     "builds": [
-      {
-        "src": "/index.js",
-        "use": "@vercel/node"
-      }
+      { "src": "index.js", "use": "@vercel/node" },
+      { "src": "client/dist/**", "use": "@vercel/static" }
     ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.js"
-      }
-    ]
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   }
-  
-  
-  
-  
-  
-  
