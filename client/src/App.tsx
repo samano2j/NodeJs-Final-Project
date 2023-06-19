@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
@@ -8,7 +7,7 @@ import Search from './pages/Search'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Library from './pages/Library'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
