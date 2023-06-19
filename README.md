@@ -33,3 +33,5 @@ Note: MONGO_URL can be obtained in the database dashboard, where you can find th
 > cd .. <br />
 > npm i <br />
 > npm run dev
+
+Deployed site: https://node-js-final-project-nw73p8b8u-samano2j.vercel.app/
