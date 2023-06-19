@@ -13,13 +13,22 @@ const sessions = require('express-session');
 app.use(cookieParser());
 // creating 24 hours from milliseconds
 const oneDay = 1000 * 60 * 60 * 24;
+const { MongoClient } = require('mongodb');
+const MongoStore = require('connect-mongo');
+const mongoURL = process.env.MONGO_URL;
+const mongoOptions = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  };
+const client = new MongoClient(mongoURL, mongoOptions);
 
 //session middleware
 app.use(sessions({
     secret: "thisismysecrctekeyfhrgfgrfrty84fwir767",
     saveUninitialized:true,
     cookie: { maxAge: oneDay },
-    resave: false
+    resave: false,
+    store: MongoStore.create({ client }),
 }));
 
 
