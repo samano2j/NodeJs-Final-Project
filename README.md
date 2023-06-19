@@ -25,6 +25,8 @@ Create a .env file with the following contents:
 > MONGO_URL=
 > MONGO_DB_NAME=Final-Project
 > PORT=8000
+
 Note: MONGO_URL can be obtained in the database dashboard, where you can find the connect button, choose first option, and then a connection string will be shown.
+
 > npm i
 > npm run dev
