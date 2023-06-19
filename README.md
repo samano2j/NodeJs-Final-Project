@@ -11,12 +11,12 @@ This is a simple music web app where you can search anime music and be able to s
 
 # Technologies
 The stack/ technologies I used to build this app are the following:
-> MongoDB (Database)
-> ExpressJS (Back-end) 
-> ReactJS (Front-end)
-> NodeJS (Back-end)
-> Tailwind CSS (CSS)
-> Animethemes (API)
+- MongoDB (Database)
+- ExpressJS (Back-end) 
+- ReactJS (Front-end)
+- NodeJS (Back-end)
+- Tailwind CSS (CSS)
+- Animethemes (API)
 
 # How to run this app
 After cloning the project, you'll need to first setup your own MongoDB account which includes setting up a database access, database, and collection.
